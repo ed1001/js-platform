@@ -1,16 +1,12 @@
 document.addEventListener("keydown", e => {
   switch (e.key) {
     case "ArrowRight":
-      if (!game.player.jumping) {
-        game.player.accelerating = true;
-        game.player.right = true;
-      }
+      game.player.accelerating = true;
+      game.player.right = true;
       break;
     case "ArrowLeft":
-      if (!game.player.jumping) {
-        game.player.accelerating = true;
-        game.player.right = false;
-      }
+      game.player.accelerating = true;
+      game.player.right = false;
       break;
     case "ArrowUp":
       game.player.jump();

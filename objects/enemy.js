@@ -1,6 +1,6 @@
 class Enemy extends Player {
-  constructor(size, color, ctx, canvas) {
-    super(size, color, ctx, canvas);
+  constructor(size, color, canvas) {
+    super(size, color, canvas);
     this.x = canvas.width + size * 2;
     this.vx = -4;
   }

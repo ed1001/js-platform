@@ -1,0 +1,12 @@
+.game-cont {
+  width: 90vw;
+  height: 54vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vw;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+}

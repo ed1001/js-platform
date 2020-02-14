@@ -3,11 +3,14 @@ var ctx = canvas.getContext("2d");
 
 window.requestAnimationFrame(update);
 
-const game = new Game(ctx, canvas);
+var background = new Image();
+background.src = "./Background.png";
+
+let game = new Game(canvas);
 
 function update() {
-  drawBg(ctx);
-
+  ctx.drawImage(background,0,0, canvas.width, canvas.height); 
+  drawGround(ctx);
   switch (game.state) {
     case "pre":
       game.pre();

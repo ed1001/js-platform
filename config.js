@@ -10,9 +10,14 @@ let enemyGenerate = 0;
 
 // player
 const playerSize = 50;
-const playerColor = "white";
+let playerColor = "rgba(255, 255, 255, 1)";
+let opacity = 1;
+let opacityDesc = true;
 
 // enemy
-const enemies = [];
+let enemies = [];
 const enemySize = 30;
 const enemyColor = "blue";
+
+// platforms
+let platforms = [];
